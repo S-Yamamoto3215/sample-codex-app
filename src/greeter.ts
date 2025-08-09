@@ -1,7 +1,5 @@
-export function greet(name: string | null): string {
-  if (name === null || name === undefined || name === "") {
-    return "Hello, Guest";
-  } else {
-    return "Hello, " + name;
-  }
+export function greet(name?: string | null): string {
+  const trimmedName = name?.trim();
+  const finalName = trimmedName ? trimmedName : "Guest";
+  return `Hello, ${finalName}`;
 }
