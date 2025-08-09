@@ -1,0 +1,14 @@
+{
+  "name": "sample-codex-app",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.0.0"
+  }
+}
